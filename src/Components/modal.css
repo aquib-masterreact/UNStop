@@ -1,0 +1,84 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.Modal {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 50%;
+}
+.modalHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  border-bottom: 1px solid grey;
+}
+#faX {
+  width: 1rem;
+  height: 1rem;
+  padding: 2rem;
+}
+input {
+  width: 80%;
+  padding: 0.7rem;
+}
+label {
+  float: left;
+  font-size: large;
+  margin-left: 7%;
+  padding: 0.5rem;
+}
+select {
+  width: 84%;
+  padding: 0.7rem;
+}
+.skills {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  margin: 1rem 0;
+
+  text-align: center;
+}
+.display {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 80%;
+  background-color: ivory;
+  border: 1px solid rgb(94, 86, 86);
+
+  padding: 0.7rem;
+}
+.skill1 {
+  width: 4rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  background-color: ivory;
+  border: 1px solid rgb(94, 86, 86);
+}
+@media only screen and (max-width: 450px) {
+  .Modal {
+    width: 100%;
+    margin-top: 7rem;
+    overflow-y: scroll;
+  }
+  .Modal::-webkit-scrollbar {
+    display: none;
+  }
+}
