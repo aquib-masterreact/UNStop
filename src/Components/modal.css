@@ -11,15 +11,15 @@
 }
 
 .Modal {
-  background-color: antiquewhite;
   text-align: center;
   width: 50%;
+  background-color: whitesmoke;
 }
 .modalHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aliceblue;
+
   border-bottom: 1px solid grey;
 }
 #faX {
@@ -58,7 +58,7 @@ select {
   flex-wrap: wrap;
   gap: 1rem;
   width: 80%;
-  background-color: ivory;
+
   border: 1px solid rgb(94, 86, 86);
 
   padding: 0.7rem;

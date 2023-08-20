@@ -1,12 +1,13 @@
 import { faCross, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import "./modal.css";
 
-const Modal = ({ closeModal }) => {
+const Modal = () => {
   return (
     <div className="container">
       <div className="Modal">
-        <div className="modalHead" onClick={closeModal}>
+        <div className="modalHead">
           <h1>Create new assessment</h1>
           <FontAwesomeIcon icon={faXmark} id="faX" />
         </div>
