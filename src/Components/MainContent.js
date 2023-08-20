@@ -19,9 +19,6 @@ import Modal from "./Modal";
 
 const MainContent = () => {
   const [showmodal, setShowModal] = useState(false);
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   return (
     <div className="table">
@@ -90,7 +87,7 @@ const MainContent = () => {
         <div
           className="card1"
           onClick={() => {
-            setShowModal(true);
+            setShowModal(!showmodal);
           }}
         >
           <FontAwesomeIcon
@@ -98,7 +95,7 @@ const MainContent = () => {
             id="faPlus"
             style={{ color: "#3f76d5" }}
           />
-          {showmodal && <Modal closeModal={closeModal} />}
+          {showmodal ? <Modal /> : " "}
           <h2>New Assessment</h2>
           <p className="cardDescription">
             From here you can add questions of multiple types like
